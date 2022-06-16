@@ -1,0 +1,14 @@
+{
+  "AWSTemplateFormatVersion":"2010-09-09",
+  "Description": "A simple EC2 Instance Cloud Formation Template",
+  "Resources":{
+    "EC2inCF": {
+      "Type": "AWS::EC2::Instance",
+      "Properties":{
+        "ImageId": "ami-0cff7528ff583bf9a",
+        "InstanceType": "t2.micro",
+        "KeyName": "KeyPairNVirginia"
+      }
+    }
+  }
+}

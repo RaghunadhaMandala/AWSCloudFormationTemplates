@@ -1,0 +1,26 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "A simple VPC and subnets creation",
+  "Resources": {
+    "ThreeTierVPC":{
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock":"10.1.0.0/16"
+      }
+    },
+    "PublicSubnet":{
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": { "Ref" : "ThreeTierVPC"},
+        "CidrBlock": "10.1.1.0/24"
+      }
+    },
+    "PrivateSubnet":{
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {"Ref" : "ThreeTierVPC"},
+        "CidrBlock": "10.1.2.0/24"
+      }
+    }
+  }
+}
