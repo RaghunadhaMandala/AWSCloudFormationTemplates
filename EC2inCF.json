@@ -9,6 +9,14 @@
         "InstanceType": "t2.micro",
         "KeyName": "KeyPairNVirginia"
       }
+    },
+    "EC2NEW" : {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId":"ami-0cff7528ff583bf9a",
+        "InstanceType":"t2.micro",
+        "KeyName":"KeyPairNVirginia"
+      }
     }
   }
 }
