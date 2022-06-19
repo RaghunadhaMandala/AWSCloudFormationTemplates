@@ -1,0 +1,16 @@
+{
+    "AWSTemplateFromatVersion" : "2010-09-09",
+    "Description" : "Creating a Route53 hosted zone",
+    "Resources" : {
+        "threetierroute53" : {
+            "Type" : "AWS::Route53::HostedZone",
+            "Properties" : {
+                "HostedZoneConfig" : {
+                    "comment" : "My hosted zone for rapahere.tk"
+                },
+                "Name" : "rapahere.tk",
+                "Name" : "www.rapahere.tk"
+            }
+        }
+    }
+}
