@@ -1,5 +1,5 @@
 {
-    "AWSTemplateFromatVersion" : "2010-09-09",
+    "AWSTemplateFormatVersion" : "2010-09-09",
     "Description" : "Creating a Route53 hosted zone",
     "Resources" : {
         "threetierroute53" : {
